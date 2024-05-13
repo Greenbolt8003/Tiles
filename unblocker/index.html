@@ -1,0 +1,24 @@
+<body>
+    <div id="button">
+      
+      <button id="fullscreen-button" type="button"> <img src="https://i.ibb.co/LCWmKD3/FULLSCREEN.png" height ="40" width="40" /></button>
+      
+      </div>
+    
+    <div id="fullscreen">
+        <iframe id="fullscreen" src= "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFZmdzYzNjFpM3FGcFJEaUZRdnJCdkE4YnVfZ3xBQ3Jtc0treHlRN1RVNnM3cUhUYi1SN29UWGpad1Uwcm9WdlJ2Z1BuOG1xZFQ5dUU1cV9pWXpVajZTNmwwZkZPYUU3NHY2OXBYSWZwb1NpV1NicHBnVC01M3cyN0lFNF9DakpRaE9vdGFJOWdFVlIxRUVwVGhtRQ&q=https%3A%2F%2Fdefnotgxmes.ink%2Fassets%2Fhtml%2Fwebsites%2Fgoogle.html&v=6ENr9oIRp2Y"
+         frameborder="0" allowfullscreen="true" overflow="visible" width="100%vw" height="100%vh" frameborder="0"></iframe>
+    </div>
+    
+        <script>
+      var fullscreenButton = document.getElementById("fullscreen-button");
+      var fullscreenDiv = document.getElementById("fullscreen");
+      var fullscreenFunc = fullscreenDiv.requestFullscreen;
+      
+        function enterFullscreen() {
+          fullscreenFunc.call(fullscreenDiv);
+        }
+      
+        fullscreenButton.addEventListener('click', enterFullscreen);
+        </script>
+    </body>
